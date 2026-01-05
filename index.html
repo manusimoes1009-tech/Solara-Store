@@ -1,28 +1,165 @@
-index.html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Solara</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solara | Moda Jovem</title>
   <style>
     body {
-      background: linear-gradient(135deg, #a855f7, #7dd3fc);
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #eef2ff, #fdfdff);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #6d28d9, #60a5fa);
       color: white;
+      padding: 30px 20px;
+      text-align: center;
     }
-    h1 {
-      font-size: 3em;
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
     }
-    p {
-      font-size: 1.2em;
+    nav a {
+      color: white;
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 35px;
+      color: #6d28d9;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .produto {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+      padding: 18px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .produto:hover {
+      transform: translateY(-6px);
+    }
+    .produto img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 12px;
+    }
+    .produto h3 {
+      margin: 8px 0 4px;
+      font-size: 18px;
+    }
+    .preco {
+      font-weight: bold;
+      color: #6d28d9;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    button {
+      background: linear-gradient(90deg, #6d28d9, #60a5fa);
+      border: none;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 15px;
+      width: 100%;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .sobre {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+    footer {
+      background: #6d28d9;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <h1>Solara ✨</h1>
-  <p>Moda casual para garotas adolescentes</p>
-  <p>Em breve nossa loja no Instagram 💜💙</p>
+
+  <header>
+    <h1>SOLARA</h1>
+    <p>Moda casual para garotas que brilham ✨</p>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Instagram</a>
+    </nav>
+  </header>
+
+  <section id="produtos">
+    <h2>Lançamentos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x380" alt="Cropped básico">
+        <h3>Cropped Básico</h3>
+        <p class="preco">R$ 69,90</p>
+        <button>Comprar pelo Instagram</button>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x380" alt="Top Tube">
+        <h3>Top Tube</h3>
+        <p class="preco">R$ 59,90</p>
+        <button>Comprar pelo Instagram</button>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x380" alt="Calça Cargo">
+        <h3>Calça Cargo</h3>
+        <p class="preco">R$ 169,90</p>
+        <button>Comprar pelo Instagram</button>
+      </div>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x380" alt="Saia Cargo">
+        <h3>Saia Cargo</h3>
+        <p class="preco">R$ 119,90</p>
+        <button>Comprar pelo Instagram</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a Solara</h2>
+    <div class="sobre">
+      A Solara é uma loja online de roupas casuais para garotas adolescentes.
+      Aqui você encontra croppeds básicos, tops tube, calças cargo, saias e peças estilosas
+      pra montar looks confortáveis e cheios de atitude 💜💙
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Compre pelo Instagram</h2>
+    <p style="text-align:center; font-size:18px;">
+      Instagram: <strong>@solara.store</strong><br>
+      Chama a gente no direct 💌
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 - Solara | Moda Jovem</p>
+  </footer>
+
 </body>
 </html>
